@@ -5,8 +5,8 @@
 >**nohup sh run.sh genome5 a01  &**  
 （然后敲两次回车） 
 
-# run.sh 中的代码
-[run.sh](/)
+# [run.sh](/run.sh) 中的代码
+
 >**\# 设定变量名**
 >
 >**\## 数据来源** 
