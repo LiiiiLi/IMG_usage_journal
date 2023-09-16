@@ -1,9 +1,9 @@
 **先放到Linux的.sh文件里面编辑，不然会有因为win和linux的空格格式不同而产生的报错。**
 
 **执行：（以run.sh为文件名为例，数据来源为：genome5 数据ID为：a01）**
->在终端中输入:
->**nohup sh run.sh genome5 a01  &**
-（然后敲两次回车）
+>在终端中输入:  
+>**nohup sh run.sh genome5 a01  &**  
+（然后敲两次回车） 
 
 # run.sh 中的代码
 
@@ -14,15 +14,15 @@ SOURCE=\$1
 **\## 数据ID**    
 >ID=\$2   
 **\## assembly 的存储路径**       
-> ASSEMBLY=/home/liucongcong/data/testAllMethods/datasets/\${SOURCE}-\${ID}.assembly
+> ASSEMBLY=/home/liucongcong/data/testAllMethods/datasets/\${SOURCE}-\${ID}.assembly  
 >**\## bam 的存储路径**
->BAM=/home/liucongcong/data/testAllMethods/datasets/\${SOURCE}-\${ID}.*.bam
+>BAM=/home/liucongcong/data/testAllMethods/datasets/\${SOURCE}-\${ID}.*.bam  
 
 >**\# 为所有bam文件建立索引, 生成bai文件**
->for bam in \`ls ${BAM}`
->do
-samtools index \${bam}
->done
+>for bam in \`ls ${BAM}`  
+>do  
+samtools index \${bam}  
+>done  
 
 #========CONCOCT - v1.0.0========
 >**\# 创建CONCOCT - v1.0.0对应临时文件夹并进入该文件夹**
